@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageContent from "../components/PageContent";
 
 function HomePage() {
   return (
-    <div>
-      <h1>Home page</h1>
-    </div>
-  )
+    <PageContent title="Welcome!">
+      <p>Browse all our amazing events!</p>
+    </PageContent>
+  );
 }
 
-export default HomePage
+export default HomePage;

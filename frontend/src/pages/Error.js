@@ -9,11 +9,11 @@ function Error() {
     let title = 'An error occured!';
     let message = "Something went wrong!";
 
-    if (error.status = 500) {
-        message = JSON.parse(error.data).message;
+    if (error.status === 500) {
+        message = error.data.message;
     }
 
-    if ((error.status = 404)) {
+    if ((error.status === 404)) {
         title = 'Not found';
         message = 'Could not find the page';
     }
